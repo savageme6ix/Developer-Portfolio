@@ -9,9 +9,9 @@ export default function Hero() {
           Open to freelance work
         </div>
         <h1 className={styles.heading}>
-          Frontend<br />
-          Developer &amp;<br />
-          <span>Problem Solver</span>
+          Shaping Concepts<br />
+          into Real Projects<br />
+          that <span>Deliver Results</span>
         </h1>
         <p className={styles.sub}>
           I build clean, fast, and responsive web experiences using React, HTML/CSS,

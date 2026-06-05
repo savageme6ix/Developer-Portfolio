@@ -16,7 +16,7 @@ export default function Contact() {
             <h2 className={styles.heading}>
               Let's build<br />something great.
             </h2>
-            <p className={styles.email}>yourname@email.com</p>
+            <p className={styles.email}>dslamp0@gmail.com</p>
             <a href="mailto:yourname@email.com" className="btn-primary">
               Send me an email &rarr;
             </a>
