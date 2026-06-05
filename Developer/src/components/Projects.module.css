@@ -34,13 +34,23 @@
   font-size: 2.2rem;
 }
 
-.thumb i {
-  font-size: 2.2rem;
+.thumb svg {
+  width: 64px;
+  height: 64px;
 }
 
-.green { background: var(--teal-light);    color: var(--teal); }
-.blue  { background: var(--blue-light);    color: var(--blue-mid); }
-.purple{ background: var(--purple-light);  color: var(--purple-mid); }
+.green  { background: var(--teal-light);   color: var(--teal); }
+.blue   { background: var(--blue-light);   color: var(--blue-mid); }
+.purple { background: var(--purple-light); color: var(--purple-mid); }
+.rose   { background: #fce8ee;              color: #be3a5a; }
+.amber  { background: #fef3e0;              color: #c47a1a; }
+.slate  { background: #e8edf2;              color: #3d5a73; }
+
+@media (prefers-color-scheme: dark) {
+  .rose  { background: #3a1a24; color: #f4729a; }
+  .amber { background: #3a2a10; color: #f0a84d; }
+  .slate { background: #1e2a35; color: #8bb4d4; }
+}
 
 .title {
   font-family: 'Syne', sans-serif;

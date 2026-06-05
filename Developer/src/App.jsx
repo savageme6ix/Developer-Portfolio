@@ -8,6 +8,7 @@ import Professional from './components/Professional';
 import About   from './components/About';
 import Contact from './components/Contact';
 import Footer  from './components/Footer';
+import ScrollReveal from './components/ScrollReveal';
 
 export default function App() {
   return (
@@ -15,13 +16,13 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Skills />
+        <ScrollReveal><Skills /></ScrollReveal>
         <Projects />
-        <Professional />
-        <About />
-        <Contact />
+        <ScrollReveal><Professional /></ScrollReveal>
+        <ScrollReveal><About /></ScrollReveal>
+        <ScrollReveal><Contact /></ScrollReveal>
       </main>
-      <Footer />
+      <ScrollReveal delay={0.1}><Footer /></ScrollReveal>
     </>
   );
 }

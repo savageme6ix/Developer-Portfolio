@@ -1,7 +1,7 @@
 import styles from './Contact.module.css';
 
 const socials = [
-  { href: 'https://github.com',   icon: 'ti-brand-github',   label: 'GitHub' },
+  { href: 'https://github.com/savageme6ix', icon: 'ti-brand-github', label: 'GitHub' },
   { href: 'https://linkedin.com', icon: 'ti-brand-linkedin', label: 'LinkedIn' },
   { href: 'https://twitter.com',  icon: 'ti-brand-x',        label: 'Twitter' },
 ];
@@ -13,11 +13,11 @@ export default function Contact() {
         <p className="section-label">Get in touch</p>
         <div className={styles.inner}>
           <div className={styles.left}>
-            <h2 className={styles.heading}>
+            <h2 className={styles.heading} style={{ marginBottom: '5px' }}>
               Let's build<br />something great.
             </h2>
-            <p className={styles.email}>dslamp0@gmail.com</p>
-            <a href="mailto:yourname@email.com" className="btn-primary">
+            <p className={styles.email} style={{ color: 'white' }}>dslamp0@gmail.com</p>
+            <a href="mailto:dslamp0@gmail.com" className="btn-primary">
               Send me an email &rarr;
             </a>
           </div>

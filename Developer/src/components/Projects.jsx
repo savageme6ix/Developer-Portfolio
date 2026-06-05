@@ -1,32 +1,64 @@
+import { motion } from 'framer-motion';
 import styles from './Projects.module.css';
+import ProjectLogo from './ProjectLogo';
+import ScrollReveal, { staggerContainer, staggerItem } from './ScrollReveal';
+
+const GITHUB = 'https://github.com/savageme6ix';
 
 const projects = [
   {
-    title: 'Business Landing Page',
-    desc: 'A fully responsive landing page for a SaaS product with smooth scroll and mobile-first design.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    icon: 'ti-layout-2',
-    color: 'green',
-    live: '#',
-    github: '#',
-  },
-  {
-    title: 'Task Manager App',
-    desc: 'A React-based to-do app with filtering, local storage persistence, and dark mode toggle.',
-    tags: ['React', 'Hooks', 'LocalStorage'],
-    icon: 'ti-list-check',
-    color: 'blue',
-    live: '#',
-    github: '#',
-  },
-  {
-    title: 'Weather Dashboard',
-    desc: 'Fetches real-time weather data from an API and displays it with dynamic UI changes based on conditions.',
-    tags: ['JavaScript', 'REST API', 'CSS'],
-    icon: 'ti-cloud',
+    title: '6ix Essence — Perfume Store',
+    desc: 'A luxury ecommerce perfume storefront with product browsing, cart flow, and a polished mobile-first shopping experience.',
+    tags: ['React', 'Ecommerce', 'Vercel'],
+    logo: 'perfume',
     color: 'purple',
-    live: '#',
-    github: '#',
+    live: 'https://6ix-essence.vercel.app/',
+    github: GITHUB,
+  },
+  {
+    title: 'AI Resume Analyser',
+    desc: 'An AI-powered tool that reviews resumes, scores job fit, and gives actionable feedback to strengthen applications.',
+    tags: ['React', 'AI', 'Vercel'],
+    logo: 'resume',
+    color: 'blue',
+    live: 'https://ai-job-application-tracker-umber.vercel.app/',
+    github: GITHUB,
+  },
+  {
+    title: 'Movie Discovery App',
+    desc: 'Browse trending films, search titles, and explore details with a clean interface powered by movie API data.',
+    tags: ['React', 'REST API', 'Vercel'],
+    logo: 'movie',
+    color: 'rose',
+    live: 'https://movie-app-xi-lovat.vercel.app/',
+    github: GITHUB,
+  },
+  {
+    title: 'Amazon Clone',
+    desc: 'A full ecommerce replica with product listings, cart functionality, and Amazon-inspired UI patterns.',
+    tags: ['React', 'Ecommerce', 'CSS'],
+    logo: 'amazon',
+    color: 'amber',
+    live: 'https://amazon-replica-coral.vercel.app/',
+    github: GITHUB,
+  },
+  {
+    title: 'Recipe Website',
+    desc: 'Discover and explore recipes with search, categories, and detailed cooking instructions in a warm, inviting layout.',
+    tags: ['React', 'API', 'Vercel'],
+    logo: 'recipe',
+    color: 'green',
+    live: 'https://recipe-website-sepia-one.vercel.app/',
+    github: GITHUB,
+  },
+  {
+    title: 'Job Application Tracker',
+    desc: 'Track job applications, statuses, and follow-ups in one organised dashboard built for active job seekers.',
+    tags: ['React', 'Dashboard', 'Vercel'],
+    logo: 'job',
+    color: 'slate',
+    live: 'https://job-application-tracker-two-alpha.vercel.app/',
+    github: GITHUB,
   },
 ];
 
@@ -34,12 +66,24 @@ export default function Projects() {
   return (
     <section className={styles.section} id="projects">
       <div className="container">
-        <p className="section-label">Selected work</p>
-        <div className={styles.grid}>
+        <ScrollReveal>
+          <p className="section-label">Selected work</p>
+        </ScrollReveal>
+        <motion.div
+          className={styles.grid}
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: '-60px' }}
+        >
           {projects.map((project) => (
-            <div key={project.title} className={styles.card}>
+            <motion.div
+              key={project.title}
+              className={styles.card}
+              variants={staggerItem}
+            >
               <div className={`${styles.thumb} ${styles[project.color]}`}>
-                <i className={`ti ${project.icon}`} aria-hidden="true"></i>
+                <ProjectLogo type={project.logo} />
               </div>
               <h3 className={styles.title}>{project.title}</h3>
               <p className={styles.desc}>{project.desc}</p>
@@ -56,9 +100,9 @@ export default function Projects() {
                   <i className="ti ti-brand-github" aria-hidden="true"></i> GitHub
                 </a>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
