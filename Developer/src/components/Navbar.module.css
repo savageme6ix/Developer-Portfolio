@@ -52,6 +52,12 @@
   color: #fff !important;
 }
 
+@media (max-width: 768px) {
+  .nav {
+    padding: 1rem 0;
+  }
+}
+
 @media (max-width: 600px) {
   .links {
     gap: 1.2rem;
@@ -59,5 +65,29 @@
 
   .cta {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .links {
+    gap: 0.9rem;
+  }
+
+  .links a {
+    font-size: 13px;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .links {
+    gap: 0.7rem;
+  }
+
+  .links a {
+    font-size: 12px;
   }
 }

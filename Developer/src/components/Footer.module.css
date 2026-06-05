@@ -5,3 +5,10 @@
   font-size: 13px;
   color: var(--text-tertiary);
 }
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.2rem 0;
+    font-size: 12px;
+  }
+}

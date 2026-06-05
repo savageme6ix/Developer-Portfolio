@@ -3,6 +3,17 @@
   border-top: none;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.content {
+  min-width: 0;
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -56,8 +67,81 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 600px) {
+.visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decorCard {
+  width: 100%;
+  max-width: 280px;
+  padding: 1.5rem;
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-primary);
+  transition: transform 0.35s ease;
+}
+
+.decorCard:hover {
+  transform: rotate(-2deg) scale(1.03);
+}
+
+.decorCard svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4.5rem 0 4rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .visual {
+    display: none;
+  }
+
   .heading {
+    font-size: clamp(2rem, 8vw, 3.4rem);
     letter-spacing: -1.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 3.5rem 0 3rem;
+  }
+
+  .sub {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .ctaRow {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .badge {
+    font-size: 11px;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .heading {
+    font-size: clamp(1.85rem, 8vw, 2.4rem);
+    letter-spacing: -1px;
   }
 }
