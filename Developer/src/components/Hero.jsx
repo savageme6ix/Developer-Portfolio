@@ -32,8 +32,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease }}
         >
-          I build clean, fast, and responsive web experiences using React, HTML/CSS,
-          and JavaScript. Based in Nairobi — working with clients globally.
+          I build fast, responsive websites and web applications using React, 
+          JavaScript, and modern frontend technologies.
+          Based in Nairobi and available for freelance projects worldwide.
         </motion.p>
         <motion.div
           className={styles.ctaRow}

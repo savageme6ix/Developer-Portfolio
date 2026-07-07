@@ -15,15 +15,17 @@ export default function About() {
         <div className={styles.grid}>
           <div className={styles.text}>
             <p>
-              I'm a self-taught frontend developer from Nairobi with a passion for
-              building things that work beautifully. Over the past year I've learned
-              HTML, CSS, JavaScript, and React — shipping real projects along the way.
+            I'm a frontend developer from Nairobi who builds fast,
+             responsive web applications with React, JavaScript, and modern web technologies.
+              Over the past years I've designed and deployed projects ranging from e-commerce websites and AI-powered tools to productivity apps
+               and API-driven platforms. 
+              
             </p>
             <br />
             <p>
-              I care deeply about clean code, fast load times, and interfaces that
-              just make sense. I'm now open to freelance work: landing pages, web
-              apps, UI components, and more.
+            I care deeply about clean code, performance, and creating user experiences that feel intuitive from the first click. 
+            I'm currently available for freelance work including landing pages, business websites, web applications,
+            and custom UI development.
             </p>
           </div>
           <div className={styles.stats}>

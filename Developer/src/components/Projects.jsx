@@ -12,7 +12,7 @@ const projects = [
     tags: ['React', 'Ecommerce', 'Vercel'],
     logo: 'perfume',
     color: 'purple',
-    live: 'https://6ix-essence.vercel.app/',
+    live: 'https://6ix-essence-omega.vercel.app/',
     github: GITHUB,
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     tags: ['React', 'AI', 'Vercel'],
     logo: 'resume',
     color: 'blue',
-    live: 'https://ai-job-application-tracker-umber.vercel.app/',
+    live: 'https://job-application-tracker-five-sandy.vercel.app/',
     github: GITHUB,
   },
   {
@@ -30,16 +30,16 @@ const projects = [
     tags: ['React', 'REST API', 'Vercel'],
     logo: 'movie',
     color: 'rose',
-    live: 'https://movie-app-xi-lovat.vercel.app/',
+    live: 'https://movie-app-one-pi-33.vercel.app/',
     github: GITHUB,
   },
   {
-    title: 'Amazon Clone',
+    title: 'Ecommerce Sales Website',
     desc: 'A full ecommerce replica with product listings, cart functionality, and Amazon-inspired UI patterns.',
     tags: ['React', 'Ecommerce', 'CSS'],
     logo: 'amazon',
     color: 'amber',
-    live: 'https://amazon-replica-coral.vercel.app/',
+    live: 'https://ecommerce-sales-zeta.vercel.app/',
     github: GITHUB,
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     tags: ['React', 'API', 'Vercel'],
     logo: 'recipe',
     color: 'green',
-    live: 'https://recipe-website-sepia-one.vercel.app/',
+    live: 'https://recipe-website-kappa-nine.vercel.app/',
     github: GITHUB,
   },
   {
