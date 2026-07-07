@@ -21,7 +21,7 @@ const projects = [
     tags: ['React', 'AI', 'Vercel'],
     logo: 'resume',
     color: 'blue',
-    live: 'https://job-application-tracker-five-sandy.vercel.app/',
+    live: 'https://ai-resume-analyzer-xi-wheat.vercel.app/',
     github: GITHUB,
   },
   {
@@ -57,7 +57,7 @@ const projects = [
     tags: ['React', 'Dashboard', 'Vercel'],
     logo: 'job',
     color: 'slate',
-    live: 'https://job-application-tracker-two-alpha.vercel.app/',
+    live: 'https://job-application-tracker-five-sandy.vercel.app/',
     github: GITHUB,
   },
 ];
