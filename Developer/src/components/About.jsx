@@ -2,7 +2,7 @@ import styles from './About.module.css';
 
 const stats = [
   { num: '5+',   label: 'Projects shipped' },
-  { num: '1yr',  label: 'Self-taught journey' },
+  { num: '2yr',  label: 'Self-taught journey' },
   { num: '100%', label: 'Remote friendly' },
   { num: 'Fast', label: 'Turnaround time' },
 ];

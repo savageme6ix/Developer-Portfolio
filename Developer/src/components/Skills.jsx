@@ -5,6 +5,7 @@ const skills = [
   { label: 'CSS3',              icon: 'ti-brand-css3' },
   { label: 'JavaScript',        icon: 'ti-brand-javascript' },
   { label: 'React',             icon: 'ti-brand-react' },
+  { label: 'Node.js',           icon: 'ti-brand-nodejs' },
   { label: 'Git & GitHub',      icon: 'ti-brand-git' },
   { label: 'Responsive Design', icon: 'ti-layout' },
   { label: 'Flexbox / Grid',    icon: 'ti-vector' },
@@ -16,6 +17,7 @@ const pillSkills = [
   { label: 'CSS3',       image: '/Css.jpeg' },
   { label: 'JavaScript', image: '/JavaScript.jpeg' },
   { label: 'React',      image: '/React.jpeg' },
+  { label: 'Node.js',    image: '/NodeJs.jpeg' },
   { label: 'Git',        image: '/Git.jpeg' },
 ];
 
